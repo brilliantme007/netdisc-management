@@ -12,6 +12,17 @@ import java.util.Map;
  */
 public class EntityUtils {
 
+    /**
+     * 将map转换成指定的实体对象
+     * key值和对应实体中的setter上的MapToEntity.name相同
+     *
+     * @param params
+     * @param clazz
+     * @return
+     * @throws IllegalAccessException
+     * @throws InstantiationException
+     * @throws InvocationTargetException
+     */
     public static Object mapToEntity(Map<String, Object> params, Class clazz) throws IllegalAccessException,
             InstantiationException, InvocationTargetException {
         Object o = clazz.newInstance();
