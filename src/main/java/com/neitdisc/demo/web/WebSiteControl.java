@@ -9,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,6 +24,8 @@ import java.util.UUID;
  * @author WHLiang
  * @date 2019/8/21 9:57
  */
+
+@CrossOrigin
 @Controller
 public class WebSiteControl {
 
