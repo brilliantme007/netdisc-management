@@ -6,7 +6,7 @@ package com.neitdisc.demo.entity.pojo;
  */
 public class Response<T> {
     /**
-     * 状态码(success:0,error:0,后期自增)
+     * 状态码(success:0,error:1,后期自增)
      */
     private String code;
     /**
